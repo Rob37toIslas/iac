@@ -15,7 +15,7 @@ services:
   repo: https://github.com/Rob37toIslas/api_rest
   plan: free
   region: oregon
-  buildCommand: pip install "fastapi[standard]"
-  startCommand: python3 app.py
+  buildCommand: pip install -r requirements.txt
+  startCommand: fastapi dev app.py
   rootDir: ./api
 version: "1"
