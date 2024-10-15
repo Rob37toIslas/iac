@@ -7,7 +7,7 @@ services:
   plan: free
   region: oregon
   buildCommand: pip install -r requirements.txt
-  startCommand: python3 app.py
+  startCommand: python3 app.py 8081
   rootDir: ./
 - type: web
   name: api_rest
@@ -16,6 +16,6 @@ services:
   plan: free
   region: oregon
   buildCommand: pip install -r requirements.txt
-  startCommand: fastapi dev app.py
+  startCommand: fastapi run app.py
   rootDir: ./
 version: "1"
